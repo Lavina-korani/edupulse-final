@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Plus, Clock, MapPin, Calendar as CalendarIcon, X, CheckCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Plus, Clock, MapPin, Calendar as CalendarIcon, X } from 'lucide-react';
 
 const CalendarPage = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
@@ -9,7 +9,7 @@ const CalendarPage = () => {
     const [showAddEvent, setShowAddEvent] = useState(false);
 
     // Mock events
-    const [events, setEvents] = useState([
+    const [events] = useState([
         { id: 1, title: 'Math Mid-term', date: new Date(2025, 9, 28), time: '10:00 AM', type: 'exam', description: 'Chapter 1-5' },
         { id: 2, title: 'Science Fair', date: new Date(2025, 10, 5), time: '09:00 AM', type: 'event', description: 'Main Hall' },
         { id: 3, title: 'Parent Meeting', date: new Date(2025, 9, 25), time: '02:00 PM', type: 'meeting', description: 'Staff Room' },

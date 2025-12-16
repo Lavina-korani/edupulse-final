@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
     Settings, Users, Shield, CreditCard, Bell,
-    Database, Activity, ToggleLeft, ToggleRight,
+    Database, ToggleLeft, ToggleRight,
     Search, MoreHorizontal, UserPlus, CheckCircle
 } from 'lucide-react';
 import { useToast } from '../context/ToastContext';
