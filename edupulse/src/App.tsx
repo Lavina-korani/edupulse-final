@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import { ThemeProvider } from './context/ThemeContext'
 import { ToastProvider } from './context/ToastContext'
+import { SocketProvider } from './context/SocketContext'
 import DashboardLayout from './layouts/DashboardLayout'
 import DashboardPage from './pages/DashboardPage'
 import LoginPage from './pages/LoginPage'
@@ -22,29 +23,31 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <AuthProvider>
-        <ToastProvider>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<SignupPage />} />
+        <SocketProvider>
+          <ToastProvider>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
 
-            <Route path="/dashboard" element={<DashboardLayout />}>
-              <Route index element={<DashboardPage />} />
-              <Route path="students" element={<StudentsPage />} />
-              <Route path="teachers" element={<TeachersPage />} />
-              <Route path="academics" element={<AcademicsPage />} />
-              <Route path="calendar" element={<CalendarPage />} />
-              <Route path="library" element={<LibraryPage />} />
-              <Route path="admin" element={<AdminPage />} />
-              <Route path="messages" element={<MessagesPage />} />
-              <Route path="quiz" element={<QuizPage />} />
-              <Route path="settings" element={<SettingsPage />} />
-            </Route>
+              <Route path="/dashboard" element={<DashboardLayout />}>
+                <Route index element={<DashboardPage />} />
+                <Route path="students" element={<StudentsPage />} />
+                <Route path="teachers" element={<TeachersPage />} />
+                <Route path="academics" element={<AcademicsPage />} />
+                <Route path="calendar" element={<CalendarPage />} />
+                <Route path="library" element={<LibraryPage />} />
+                <Route path="admin" element={<AdminPage />} />
+                <Route path="messages" element={<MessagesPage />} />
+                <Route path="quiz" element={<QuizPage />} />
+                <Route path="settings" element={<SettingsPage />} />
+              </Route>
 
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-          <Analytics />
-        </ToastProvider>
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+            <Analytics />
+          </ToastProvider>
+        </SocketProvider>
       </AuthProvider>
     </ThemeProvider>
   )
