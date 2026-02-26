@@ -321,9 +321,7 @@ Distributed under the Apache 2.0 License. See [LICENSE](LICENSE) for more inform
 
 ## 📧 Contact
 
-**Kunj Shah** - [@KunjShah95](https://github.com/KunjShah95)
 
-**Project Link**: [https://github.com/KunjShah95/edupulse](https://github.com/KunjShah95/edupulse)
 
 **Live Demo**: [https://edupulse-omega.vercel.app/](https://edupulse-omega.vercel.app/)
 
