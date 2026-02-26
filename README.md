@@ -9,7 +9,8 @@
 [![React](https://img.shields.io/badge/React-19.2-61dafb)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.2-646cff)](https://vitejs.dev/)
 
-[Demo](https://edupulse-omega.vercel.app/) • [Report Bug](https://github.com/KunjShah95/edupulse/issues) • [Request Feature](https://github.com/KunjShah95/edupulse/issues)
+
+[Report Bug](https://github.com/Lavina-korani/edupulse/issues) • [Request Feature](https://github.com/Lavina-korani/edupulse/issues)
 
 ![EduPulse Banner](startup-3.webp)
 
@@ -118,7 +119,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/KunjShah95/edupulse.git
+   git clone https://github.com/Lavina-korani/edupulse-final.git
    cd edupulse
    ```
 
